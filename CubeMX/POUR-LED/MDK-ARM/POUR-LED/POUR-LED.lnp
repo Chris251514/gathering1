@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"pour-led\startup_stm32f103xb.o"
+"pour-led\main.o"
+"pour-led\gpio.o"
+"pour-led\stm32f1xx_it.o"
+"pour-led\stm32f1xx_hal_msp.o"
+"pour-led\stm32f1xx_hal_gpio_ex.o"
+"pour-led\stm32f1xx_hal.o"
+"pour-led\stm32f1xx_hal_rcc.o"
+"pour-led\stm32f1xx_hal_rcc_ex.o"
+"pour-led\stm32f1xx_hal_gpio.o"
+"pour-led\stm32f1xx_hal_dma.o"
+"pour-led\stm32f1xx_hal_cortex.o"
+"pour-led\stm32f1xx_hal_pwr.o"
+"pour-led\stm32f1xx_hal_flash.o"
+"pour-led\stm32f1xx_hal_flash_ex.o"
+"pour-led\stm32f1xx_hal_exti.o"
+"pour-led\system_stm32f1xx.o"
+--strict --scatter "POUR-LED\POUR-LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "POUR-LED.map" -o POUR-LED\POUR-LED.axf
