@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"constantly-chuankou\startup_stm32f103xb.o"
+"constantly-chuankou\main.o"
+"constantly-chuankou\gpio.o"
+"constantly-chuankou\usart.o"
+"constantly-chuankou\stm32f1xx_it.o"
+"constantly-chuankou\stm32f1xx_hal_msp.o"
+"constantly-chuankou\stm32f1xx_hal_gpio_ex.o"
+"constantly-chuankou\stm32f1xx_hal_uart.o"
+"constantly-chuankou\stm32f1xx_hal.o"
+"constantly-chuankou\stm32f1xx_hal_rcc.o"
+"constantly-chuankou\stm32f1xx_hal_rcc_ex.o"
+"constantly-chuankou\stm32f1xx_hal_gpio.o"
+"constantly-chuankou\stm32f1xx_hal_dma.o"
+"constantly-chuankou\stm32f1xx_hal_cortex.o"
+"constantly-chuankou\stm32f1xx_hal_pwr.o"
+"constantly-chuankou\stm32f1xx_hal_flash.o"
+"constantly-chuankou\stm32f1xx_hal_flash_ex.o"
+"constantly-chuankou\stm32f1xx_hal_exti.o"
+"constantly-chuankou\system_stm32f1xx.o"
+--strict --scatter "CONSTANTLY-CHUANKOU\CONSTANTLY-CHUANKOU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CONSTANTLY-CHUANKOU.map" -o CONSTANTLY-CHUANKOU\CONSTANTLY-CHUANKOU.axf

@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dma-chuankou\startup_stm32f103xb.o"
+"dma-chuankou\main.o"
+"dma-chuankou\gpio.o"
+"dma-chuankou\dma.o"
+"dma-chuankou\usart.o"
+"dma-chuankou\stm32f1xx_it.o"
+"dma-chuankou\stm32f1xx_hal_msp.o"
+"dma-chuankou\stm32f1xx_hal_gpio_ex.o"
+"dma-chuankou\stm32f1xx_hal_uart.o"
+"dma-chuankou\stm32f1xx_hal.o"
+"dma-chuankou\stm32f1xx_hal_rcc.o"
+"dma-chuankou\stm32f1xx_hal_rcc_ex.o"
+"dma-chuankou\stm32f1xx_hal_gpio.o"
+"dma-chuankou\stm32f1xx_hal_dma.o"
+"dma-chuankou\stm32f1xx_hal_cortex.o"
+"dma-chuankou\stm32f1xx_hal_pwr.o"
+"dma-chuankou\stm32f1xx_hal_flash.o"
+"dma-chuankou\stm32f1xx_hal_flash_ex.o"
+"dma-chuankou\stm32f1xx_hal_exti.o"
+"dma-chuankou\system_stm32f1xx.o"
+--strict --scatter "DMA-CHUANKOU\DMA-CHUANKOU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DMA-CHUANKOU.map" -o DMA-CHUANKOU\DMA-CHUANKOU.axf

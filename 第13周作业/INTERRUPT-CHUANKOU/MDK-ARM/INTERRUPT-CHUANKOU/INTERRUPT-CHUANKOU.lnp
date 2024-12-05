@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"interrupt-chuankou\startup_stm32f103xb.o"
+"interrupt-chuankou\main.o"
+"interrupt-chuankou\gpio.o"
+"interrupt-chuankou\usart.o"
+"interrupt-chuankou\stm32f1xx_it.o"
+"interrupt-chuankou\stm32f1xx_hal_msp.o"
+"interrupt-chuankou\stm32f1xx_hal_gpio_ex.o"
+"interrupt-chuankou\stm32f1xx_hal_uart.o"
+"interrupt-chuankou\stm32f1xx_hal.o"
+"interrupt-chuankou\stm32f1xx_hal_rcc.o"
+"interrupt-chuankou\stm32f1xx_hal_rcc_ex.o"
+"interrupt-chuankou\stm32f1xx_hal_gpio.o"
+"interrupt-chuankou\stm32f1xx_hal_dma.o"
+"interrupt-chuankou\stm32f1xx_hal_cortex.o"
+"interrupt-chuankou\stm32f1xx_hal_pwr.o"
+"interrupt-chuankou\stm32f1xx_hal_flash.o"
+"interrupt-chuankou\stm32f1xx_hal_flash_ex.o"
+"interrupt-chuankou\stm32f1xx_hal_exti.o"
+"interrupt-chuankou\system_stm32f1xx.o"
+--strict --scatter "INTERRUPT-CHUANKOU\INTERRUPT-CHUANKOU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "INTERRUPT-CHUANKOU.map" -o INTERRUPT-CHUANKOU\INTERRUPT-CHUANKOU.axf
